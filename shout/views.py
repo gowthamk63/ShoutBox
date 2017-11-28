@@ -65,7 +65,7 @@ def register(request):
             profile.save()
             registered = True
         else:
-            print user_form.errors, profile_form.errors
+            print(user_form.errors, profile_form.errors)
         
 
     context_dict = {'user_form':user_form, 'profile_form':profile_form, 'registered': registered}   
